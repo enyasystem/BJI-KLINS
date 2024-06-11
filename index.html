@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Sparkling Cleaners</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    /* Custom CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e3f2fd;
+      scroll-behavior: smooth;
+    }
+    .navbar-brand {
+      font-family: 'Lobster', cursive;
+      font-size: 24px;
+      color: #fff !important;
+    }
+    section {
+      padding: 80px 0;
+    }
+    h1, h2, h3 {
+      color: #0056b3;
+    }
+    .btn-primary {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+    .btn-primary:hover {
+      background-color: #004080;
+      border-color: #004080;
+    }
+    .hero-image {
+      background-image: url('img2(0)_1.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.5);
+      background-blend-mode: overlay;
+    }
+    .floating-button {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .floating-button a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background-color: #25d366;
+      border-radius: 50%;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease-in-out;
+    }
+    .floating-button a:hover {
+      transform: scale(1.1);
+    }
+    .floating-button a i {
+      color: #fff;
+      font-size: 24px;
+    }
+    .animated {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+      }
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+    .fadeInUp {
+      animation-name: fadeInUp;
+    }
+    .navbar {
+      background-color: #0056b3;
+      border-bottom: 1px solid #e7e7e7;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-nav .nav-link {
+      color: #fff !important;
+    }
+    .sticky-top {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 1020;
+    }
+    .back-to-top {
+      position: fixed;
+      bottom: 80px;
+      left: 20px;
+      display: none;
+      z-index: 9999;
+    }
+    .back-to-top a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background-color: #0056b3;
+      border-radius: 50%;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease-in-out;
+    }
+    .back-to-top a:hover {
+      transform: scale(1.1);
+    }
+    .back-to-top a i {
+      color: #fff;
+      font-size: 24px;
+    }
+    footer {
+      background-color: #0056b3;
+      color: #fff;
+      padding: 20px 0;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+  <!-- Header with navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <a class="navbar-brand" href="#">Sparkling Cleaners</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#hero">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#booking">Book Now</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reviews">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">Meet Our Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero section -->
+  <section id="hero" class="hero-image">
+    <div class="container animated fadeInUp">
+      <h1>Welcome to Sparkling Cleaners</h1>
+      <p>We make your space sparkle!</p>
+      <a href="#booking" class="btn btn-primary btn-lg">Book Now</a>
+    </div>
+  </section>
+
+  <!-- Call to Action section -->
+  <section id="cta" class="bg-primary text-white text-center">
+    <div class="container">
+      <h2>Ready for a sparkling clean home?</h2>
+      <p>Our professional cleaners are ready to make your space shine. Book a cleaning service today and experience the best in the industry!</p>
+      <a href="#booking" class="btn btn-light btn-lg">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Services section -->
+  <section id="services">
+    <div class="container">
+      <h2 class="text-center">Our Services</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card animated fadeInUp">
+            <div class="card-body">
+              <h5 class="card-title">Regular Cleaning</h5>
+              <p class="card-text">Keep your space consistently clean with our regular cleaning services.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card animated fadeInUp">
+            <div class="card-body">
+              <h5 class="card-title">Deep Cleaning</h5>
+              <p class="card-text">Get a deep, thorough cleaning to refresh your space.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card animated fadeInUp">
+            <div class="card-body">
+              <h5 class="card-title">Move-In/Out Cleaning</h5>
+              <p class="card-text">Make moving hassle-free with our move-in and move-out cleaning services.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking section -->
+  <section id="booking" style="background-color: #f8f9fa;">
+    <div class="container">
+      <h2 class="text-center">Book Your Cleaning Appointment</h2>
+      <form id="bookingForm">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="date">Select Date</label>
+            <input type="date" class="form-control" id="date" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="time">Select Time</label>
+            <input type="time" class="form-control" id="time" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="name">Your Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="email">Your Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="service">Select Service</label>
+          <select class="form-control" id="service" required>
+            <option value="Regular Cleaning">Regular Cleaning</option>
+            <option value="Deep Cleaning">Deep Cleaning</option>
+            <option value="Move-In/Move-Out Cleaning">Move-In/Move-Out Cleaning</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Book Now</button>
+      </form>
+      <div id="bookingConfirmation" class="alert alert-success mt-3" style="display:none;"></div>
+    </div>
+  </section>
+
+  <!-- Reviews section -->
+  <section id="reviews">
+    <div class="container">
+      <h2 class="text-center">What Our Clients Say</h2>
+      <div id="carouselReviews" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card animated fadeInUp">
+              <div class="card-body text-center">
+                <p class="card-text">"Sparkling Cleaners did an amazing job! My house has never been so clean."</p>
+                <h5 class="card-title">- Jane Doe</h5>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card animated fadeInUp">
+              <div class="card-body text-center">
+                <p class="card-text">"Professional and reliable. Highly recommend their services!"</p>
+                <h5 class="card-title">- John Smith</h5>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card animated fadeInUp">
+              <div class="card-body text-center">
+                <p class="card-text">"Best cleaning service I've used. Will definitely book again."</p>
+                <h5 class="card-title">- Emily Johnson</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselReviews" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselReviews" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet Our Team section -->
+  <section id="team" style="background-color: #f8f9fa;">
+    <div class="container">
+      <h2 class="text-center">Meet Our Team</h2>
+      <div id="carouselTeam" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card animated fadeInUp">
+              <img src="Orange.jpg" class="card-img-top" alt="Team Member 1">
+              <div class="card-body text-center">
+                <h5 class="card-title">Alice Johnson</h5>
+                <p class="card-text">CEO</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card animated fadeInUp">
+              <img src="Flower.jpg" class="card-img-top" alt="Team Member 2">
+              <div class="card-body text-center">
+                <h5 class="card-title">Bob Williams</h5>
+                <p class="card-text">Head of Operations</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card animated fadeInUp">
+              <img src="Heart.jpg" class="card-img-top" alt="Team Member 3">
+              <div class="card-body text-center">
+                <h5 class="card-title">Carol Smith</h5>
+                <p class="card-text">Customer Relations</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card animated fadeInUp">
+              <img src="Orange.jpg" class="card-img-top" alt="Team Member 4">
+              <div class="card-body text-center">
+                <h5 class="card-title">David Brown</h5>
+                <p class="card-text">Lead Cleaner</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card animated fadeInUp">
+              <img src="img2(0)_1.jpg" class="card-img-top" alt="Team Member 5">
+              <div class="card-body text-center">
+                <h5 class="card-title">Eve White</h5>
+                <p class="card-text">Cleaner</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselTeam" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselTeam" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="text-center">Contact Us</h2>
+      <form>
+        <div class="form-group">
+          <label for="contactName">Name</label>
+          <input type="text" class="form-control" id="contactName" required>
+        </div>
+        <div class="form-group">
+          <label for="contactEmail">Email</label>
+          <input type="email" class="form-control" id="contactEmail" required>
+        </div>
+        <div class="form-group">
+          <label for="contactMessage">Message</label>
+          <textarea class="form-control" id="contactMessage" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Floating Buttons -->
+  <div class="floating-button">
+    <a href="https://wa.me/1234567890" target="_blank" class="animated fadeInUp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="back-to-top">
+      <a href="#hero" class="animated fadeInUp">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer section -->
+  <footer class="text-center">
+    <div class="container">
+      <p>&copy; 2024 Sparkling Cleaners. All rights reserved.</p>
+      <p><a href="#hero">Back to top</a></p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script>
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      document.getElementById('bookingConfirmation').style.display = 'block';
+      document.getElementById('bookingConfirmation').innerHTML = `Thank you, ${name}! Your booking has been confirmed.`;
+      document.getElementById('bookingForm').reset();
+    });
+
+    // Add animation class to sections when they come into view
+    window.addEventListener('scroll', function() {
+      const elements = document.querySelectorAll('.animated');
+      for (let i = 0; i < elements.length; i++) {
+        const element = elements[i];
+        const position = element.getBoundingClientRect();
+        if (position.top < window.innerHeight && position.bottom >= 0) {
+          element.classList.add('fadeInUp');
+        } else {
+          element.classList.remove('fadeInUp');
+        }
+      }
+    });
+
+    // Show/hide Back to Top button
+    window.addEventListener('scroll', function() {
+      const backToTop = document.querySelector('.back-to-top');
+      if (window.scrollY > 300) {
+        backToTop.style.display = 'block';
+      } else {
+        backToTop.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
