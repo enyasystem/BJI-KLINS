@@ -12,183 +12,169 @@
   <!-- Custom CSS -->
   <style>
     /* Custom CSS styles */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #e3f2fd;
-      scroll-behavior: smooth;
-    }
-
-    .navbar-brand {
-      font-family: 'Lobster', cursive;
-      font-size: 24px;
-      color: #fff !important;
-    }
-
-    section {
-      padding: 80px 0;
-    }
-
-    h1,
-    h2,
-    h3 {
-      color: #0056b3;
-    }
-
-    .btn-primary {
-      background-color: #0056b3;
-      border-color: #0056b3;
-    }
-
-    .btn-primary:hover {
-      background-color: #004080;
-      border-color: #004080;
-    }
-
-    .hero-image {
-      background-image: url('img2(0)_1.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #fff;
-      background-color: rgba(0, 0, 0, 0.5);
-      background-blend-mode: overlay;
-    }
-
-    /*
-    .floating-button {
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      z-index: 9999;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-*/
-    .floating-button a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 50px;
-      height: 50px;
-      background-color: #25d366;
-      border-radius: 50%;
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-      transition: transform 0.2s ease-in-out;
-    }
-
-    .floating-button a:hover {
-      transform: scale(1.1);
-    }
-
-    .floating-button a i {
-      color: #fff;
-      font-size: 24px;
-    }
 
 
-    .animated {
-      animation-duration: 1s;
-      animation-fill-mode: both;
-    }
+/* Custom CSS styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e3f2fd;
+  scroll-behavior: smooth;
+}
 
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translate3d(0, 100%, 0);
-      }
+.navbar-brand {
+  font-family: 'Lobster', cursive;
+  font-size: 24px;
+  color: #fff !important;
+}
 
-      to {
-        opacity: 1;
-        transform: none;
-      }
-    }
+section {
+  padding: 80px 0;
+}
 
-    .fadeInUp {
-      animation-name: fadeInUp;
-    }
+h1, h2, h3 {
+  color: #0056b3;
+}
 
-    .navbar {
-      background-color: #0056b3;
-      border-bottom: 1px solid #e7e7e7;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+.btn-primary {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
 
-    .navbar-nav .nav-link {
-      color: #fff !important;
-    }
+.btn-primary:hover {
+  background-color: #004080;
+  border-color: #004080;
+}
 
-    .sticky-top {
-      position: -webkit-sticky;
-      position: sticky;
-      top: 0;
-      z-index: 1020;
-    }
+.hero-image {
+  background-image: url('img2(0)_1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+}
 
-    .back-to-top {
-      position: fixed;
-      bottom: 80px;
-      right: 20px;
-      display: none;
-      z-index: 9999;
-    }
+.floating-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #25d366;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+}
 
-    .back-to-top a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 50px;
-      height: 50px;
-      background-color: #0056b3;
-      border-radius: 50%;
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-      transition: transform 0.2s ease-in-out;
-    }
+.floating-button a:hover {
+  transform: scale(1.1);
+}
 
-    .back-to-top a:hover {
-      transform: scale(1.1);
-    }
+.floating-button a i {
+  color: #fff;
+  font-size: 24px;
+}
 
-    .back-to-top a i {
-      color: #fff;
-      font-size: 24px;
-    }
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
 
-    footer {
-      background-color: #0056b3;
-      color: #fff;
-      padding: 20px 0;
-    }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 
-    footer a {
-      color: #fff;
-      text-decoration: none;
-    }
+.fadeInUp {
+  animation-name: fadeInUp;
+}
 
-    footer a:hover {
-      text-decoration: underline;
-    }
+.navbar {
+  background-color: #0056b3;
+  border-bottom: 1px solid #e7e7e7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 60px; /* Adjust this value to set the desired height */
+}
 
-    .navbar-brand img {
-      height: 300px;
-      width: auto;
-      /* Maintain aspect ratio */
-    }
+.navbar-nav .nav-link {
+  color: #fff !important;
+}
 
-    .navbar {
-      margin-bottom: 50px;
-    }
+.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
 
-    .navbar-brand img {
-      height: 100px;
-      /* Adjust the height to fit your logo */
-      margin-right: 10px;
-    }
-  </style>
+.back-to-top {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  display: none;
+  z-index: 9999;
+}
+
+.back-to-top a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #0056b3;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+.back-to-top a:hover {
+  transform: scale(1.1);
+}
+
+.back-to-top a i {
+  color: #fff;
+  font-size: 24px;
+}
+
+footer {
+  background-color: #0056b3;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.navbar-brand img {
+  height: 50px; /* Adjust the height to fit your logo */
+  margin-right: 10px;
+}
+
+.navbar {
+  margin-bottom: 50px;
+}
+
+
+    
+   
+   
 </head>
 
 <body data-spy="scroll" data-target="#navbarNav" data-offset="50">
