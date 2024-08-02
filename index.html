@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,25 +17,33 @@
       background-color: #e3f2fd;
       scroll-behavior: smooth;
     }
+
     .navbar-brand {
       font-family: 'Lobster', cursive;
       font-size: 24px;
       color: #fff !important;
     }
+
     section {
       padding: 80px 0;
     }
-    h1, h2, h3 {
+
+    h1,
+    h2,
+    h3 {
       color: #0056b3;
     }
+
     .btn-primary {
       background-color: #0056b3;
       border-color: #0056b3;
     }
+
     .btn-primary:hover {
       background-color: #004080;
       border-color: #004080;
     }
+
     .hero-image {
       background-image: url('img2(0)_1.jpg');
       background-size: cover;
@@ -48,7 +57,8 @@
       background-color: rgba(0, 0, 0, 0.5);
       background-blend-mode: overlay;
     }
-/*
+
+    /*
     .floating-button {
       position: fixed;
       bottom: 20px;
@@ -70,9 +80,11 @@
       box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
       transition: transform 0.2s ease-in-out;
     }
+
     .floating-button a:hover {
       transform: scale(1.1);
     }
+
     .floating-button a i {
       color: #fff;
       font-size: 24px;
@@ -83,40 +95,48 @@
       animation-duration: 1s;
       animation-fill-mode: both;
     }
+
     @keyframes fadeInUp {
       from {
         opacity: 0;
         transform: translate3d(0, 100%, 0);
       }
+
       to {
         opacity: 1;
         transform: none;
       }
     }
+
     .fadeInUp {
       animation-name: fadeInUp;
     }
+
     .navbar {
       background-color: #0056b3;
       border-bottom: 1px solid #e7e7e7;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+
     .navbar-nav .nav-link {
       color: #fff !important;
     }
+
     .sticky-top {
       position: -webkit-sticky;
       position: sticky;
       top: 0;
       z-index: 1020;
     }
+
     .back-to-top {
       position: fixed;
       bottom: 80px;
-      left: 20px;
+      right: 20px;
       display: none;
       z-index: 9999;
     }
+
     .back-to-top a {
       display: flex;
       align-items: center;
@@ -128,33 +148,57 @@
       box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
       transition: transform 0.2s ease-in-out;
     }
+
     .back-to-top a:hover {
       transform: scale(1.1);
     }
+
     .back-to-top a i {
       color: #fff;
       font-size: 24px;
     }
+
     footer {
       background-color: #0056b3;
       color: #fff;
       padding: 20px 0;
     }
+
     footer a {
       color: #fff;
       text-decoration: none;
     }
+
     footer a:hover {
       text-decoration: underline;
     }
+
+    .navbar-brand img {
+      height: 300px;
+      width: auto;
+      /* Maintain aspect ratio */
+    }
+
+    .navbar {
+      margin-bottom: 50px;
+    }
+
+    .navbar-brand img {
+      height: 100px;
+      /* Adjust the height to fit your logo */
+      margin-right: 10px;
+    }
   </style>
 </head>
+
 <body data-spy="scroll" data-target="#navbarNav" data-offset="50">
 
   <!-- Header with navbar -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-      <a class="navbar-brand" href="#">BJI KLINS</a>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <a class="navbar-brand" href="#">
+        <img src="BJI_Logo.png" alt="BJI LOGO">
+    </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -169,9 +213,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#booking">Book Now</a>
           </li>
-          <!-- <li class="nav-item">
+           <li class="nav-item">
             <a class="nav-link" href="#reviews">Reviews</a>
-          </li> -->
+          </li> 
           <li class="nav-item">
             <a class="nav-link" href="#team">Meet Our Team</a>
           </li>
@@ -181,6 +225,39 @@
           <li class="nav-item">
             <a class="nav-link" href="About.html">About Us</a>
           </li>
+        </ul>
+      </div>
+    </nav> -->
+
+    <!-- New Nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+      <a class="navbar-brand" href="#">
+        <img src="BJI_Logo.png" alt="BJ KLINS Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#regularCleaning">Regular Cleaning</a>
+              <a class="dropdown-item" href="#deepCleaning">Deep Cleaning</a>
+              <a class="dropdown-item" href="#commercialCleaning">Commercial Cleaning</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
         </ul>
       </div>
     </nav>
@@ -194,14 +271,15 @@
       <a href="#booking" class="btn btn-primary btn-lg">Book Now</a>
     </div>
   </section>
-  
-  
+
+
 
   <!-- Call to Action section -->
   <section id="cta" class="bg-primary text-white text-center">
     <div class="container">
       <h2>Ready for a sparkling clean home?</h2>
-      <p>Our professional cleaners are ready to make your space shine. Book a cleaning service today and experience the best in the industry!</p>
+      <p>Our professional cleaners are ready to make your space shine. Book a cleaning service today and experience the
+        best in the industry!</p>
       <a href="#booking" class="btn btn-light btn-lg">Get Started</a>
     </div>
   </section>
@@ -247,7 +325,8 @@
           <div class="card animated fadeInUp">
             <div class="card-body">
               <h5 class="card-title">Fumigation Services</h5>
-              <p class="card-text">Residential and commercial fumigation for termites, bed bugs, rodents, and other pests</p>
+              <p class="card-text">Residential and commercial fumigation for termites, bed bugs, rodents, and other
+                pests</p>
             </div>
           </div>
         </div>
@@ -262,7 +341,7 @@
       </div>
     </div>
   </section>
-  
+
 
 
 
@@ -360,47 +439,58 @@
           <div class="carousel-item active">
             <div class="card animated fadeInUp">
               <img src="20240723_115043.png" class="card-img-top" alt="Team Member 1">
-              <div class="card-body text-center">
+              <!-- <div class="card-body text-center">
                 <h5 class="card-title"><b>Idemudia Jeremy</b></h5>
                 <p class="card-text">CEO</p>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="carousel-item">
             <div class="card animated fadeInUp">
               <img src="20240723_102913.png" class="card-img-top" alt="Team Member 2">
-              <div class="card-body text-center">
+              <!-- <div class="card-body text-center">
                 <h5 class="card-title"><b>Joy Omozoba</b></h5>
                 <p class="card-text">BJI KLINS Associate</p>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="carousel-item">
             <div class="card animated fadeInUp">
-              <img src="img2(0)_1.jpg" class="card-img-top" alt="Team Member 3">
-              <div class="card-body text-center">
+              <img src="20240723_124048.png" class="card-img-top" alt="Team Member 3">
+              <!-- <div class="card-body text-center">
                 <h5 class="card-title">Carol Smith</h5>
                 <p class="card-text">Customer Relations</p>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="carousel-item">
             <div class="card animated fadeInUp">
-              <img src="img2(0)_1.jpg" class="card-img-top" alt="Team Member 4">
-              <div class="card-body text-center">
+              <img src="20240723_114708.png" class="card-img-top" alt="Team Member 4">
+              <!-- <div class="card-body text-center">
                 <h5 class="card-title">David Brown</h5>
                 <p class="card-text">Lead Cleaner</p>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="carousel-item">
             <div class="card animated fadeInUp">
-              <img src="img2(0)_1.jpg" class="card-img-top" alt="Team Member 5">
-              <div class="card-body text-center">
+              <img src="20240723_103707.png" class="card-img-top" alt="Team Member 5">
+              <!-- <div class="card-body text-center">
                 <h5 class="card-title">Eve White</h5>
                 <p class="card-text">Cleaner</p>
-              </div>
+              </div> -->
             </div>
+
+          </div>
+          <div class="carousel-item">
+            <div class="card animated fadeInUp">
+              <img src="85924255421s.png" class="card-img-top" alt="Team Member 5">
+              <!-- <div class="card-body text-center">
+                <h5 class="card-title">Eve White</h5>
+                <p class="card-text">Cleaner</p>
+              </div> -->
+            </div>
+
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselTeam" role="button" data-slide="prev">
@@ -414,8 +504,8 @@
       </div>
     </div>
   </section>
-  
-  
+
+
 
   <!-- Contact section -->
   <section id="contact">
@@ -439,11 +529,11 @@
     </div>
   </section>
 
-  <!-- Floating Buttons -->
+  <!-- Floating Buttons
   <div class="floating-button">
     <a href="https://wa.me/+2347030602383" target="_blank" class="animated fadeInUp">
       <i class="fab fa-whatsapp"></i>
-    </a>
+    </a> -->
     <div class="back-to-top">
       <a href="#hero" class="animated fadeInUp">
         <i class="fas fa-arrow-up"></i>
@@ -460,27 +550,34 @@
   </footer>
 -->
 
-   <!-- Footer -->
-    <footer class="py-4 bg-dark text-white">
-        <div class="container text-center">
-                <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="text-white mx-2">
+  <!-- Footer -->
+  <footer class="py-4 bg-dark text-white">
+    <div class="container text-center">
+        <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
+        <a href="https://wa.me/2349072343041" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://github.com/yourusername" class="text-white mx-2"><i class="fab fa-github"></i></a>
+        <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="container text-center mt-3">
+        <p>BJI KLINS</p>
+        <p>Opp. Kingsway International School,
+          along FUPRE road, Ugbomro
+        </p>
+        <p>Delta State, Nigeria</p>
+        <p>Phone: <a href="tel:+2349072343041" class="text-white">+234 706 799 8386</a></p>
+        <p>Email: <a href="mailto:info@bjiklins.com" class="text-white">info@bjiklins.com</a></p>
+    </div>
+    <p class="mt-3 fadeInUp text-center">&copy; 2024 BJI KLINS</p>
+</footer>
 
-<i class="fab fa-whatsapp"></i></a>
-                <a href="+2347067998386" class="text-white mx-2"><i class="fab fa-github"></i></a>
-                <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
-            </div>
-            <p class="mt-3 fadeInUp text-center">&copy; 2024 BJI KLINS</p>
-        </div>
-    </footer>
   <!-- Bootstrap JS and dependencies -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <!-- Custom JavaScript -->
   <script>
-    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+    document.getElementById('bookingForm').addEventListener('submit', function (e) {
       e.preventDefault();
       const name = document.getElementById('name').value;
       document.getElementById('bookingConfirmation').style.display = 'block';
@@ -489,7 +586,7 @@
     });
 
     // Add animation class to sections when they come into view
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
       const elements = document.querySelectorAll('.animated');
       for (let i = 0; i < elements.length; i++) {
         const element = elements[i];
@@ -503,7 +600,7 @@
     });
 
     // Show/hide Back to Top button
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
       const backToTop = document.querySelector('.back-to-top');
       if (window.scrollY > 300) {
         backToTop.style.display = 'block';
@@ -513,4 +610,5 @@
     });
   </script>
 </body>
+
 </html>
