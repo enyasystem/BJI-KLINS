@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to Sparkling Cleaners</title>
+  <title>Welcome to BJ KLINS</title>
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome for icons -->
@@ -12,182 +12,280 @@
   <!-- Custom CSS -->
   <style>
     /* Custom CSS styles */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #e3f2fd;
-      scroll-behavior: smooth;
-    }
+  body {
+  font-family: Arial, sans-serif;
+  background-color: #e3f2fd;
+  scroll-behavior: smooth;
+}
 
-    .navbar-brand {
-      font-family: 'Lobster', cursive;
-      font-size: 24px;
-      color: #fff !important;
-    }
+h1 {
+  color: #00f; /* Blue color */
+  text-shadow: 0 0 3px #00f, 
+               0 0 6px #00f, 
+               0 0 9px #00f, 
+               0 0 12px #00f;
+}
 
-    section {
-      padding: 80px 0;
-    }
+.navbar-brand {
+  font-family: 'Lobster', cursive;
+  font-size: 24px;
+  color: #fff !important;
+}
 
-    h1,
-    h2,
-    h3 {
-      color: #0056b3;
-    }
+section {
+  padding: 80px 0;
+}
 
-    .btn-primary {
-      background-color: #0056b3;
-      border-color: #0056b3;
-    }
+h1,
+h2,
+h3 {
+  color: #0056b3;
+}
 
-    .btn-primary:hover {
-      background-color: #004080;
-      border-color: #004080;
-    }
+.btn-primary {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
 
-    .hero-image {
-      background-image: url('img2(0)_1.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #fff;
-      background-color: rgba(0, 0, 0, 0.5);
-      background-blend-mode: overlay;
-    }
+.btn-primary:hover {
+  background-color: #004080;
+  border-color: #004080;
+}
 
-    /*
-    .floating-button {
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      z-index: 9999;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-*/
-    .floating-button a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 50px;
-      height: 50px;
-      background-color: #25d366;
-      border-radius: 50%;
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-      transition: transform 0.2s ease-in-out;
-    }
-
-    .floating-button a:hover {
-      transform: scale(1.1);
-    }
-
-    .floating-button a i {
-      color: #fff;
-      font-size: 24px;
-    }
+.hero-image {
+  background-image: url('../images/img2\(0\)_1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+}
 
 
-    .animated {
-      animation-duration: 1s;
-      animation-fill-mode: both;
-    }
+/* .hero-image {
+  background: url('./images/img2\(0\)_1.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+} */
 
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translate3d(0, 100%, 0);
-      }
+.hero-image h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 
-      to {
-        opacity: 1;
-        transform: none;
-      }
-    }
+.hero-image p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
 
-    .fadeInUp {
-      animation-name: fadeInUp;
-    }
+.hero-image .btn-primary {
+  background-color: #ff5722;
+  border-color: #ff5722;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.25rem;
+  border-radius: 5px;
+}
 
-    .navbar {
-      background-color: #0056b3;
-      border-bottom: 1px solid #e7e7e7;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
 
-    .navbar-nav .nav-link {
-      color: #fff !important;
-    }
+.floating-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #25d366;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+}
 
-    .sticky-top {
-      position: -webkit-sticky;
-      position: sticky;
-      top: 0;
-      z-index: 1020;
-    }
+.floating-button a:hover {
+  transform: scale(1.1);
+}
 
-    .back-to-top {
-      position: fixed;
-      bottom: 80px;
-      right: 20px;
-      display: none;
-      z-index: 9999;
-    }
+.floating-button a i {
+  color: #fff;
+  font-size: 24px;
+}
 
-    .back-to-top a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 50px;
-      height: 50px;
-      background-color: #0056b3;
-      border-radius: 50%;
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-      transition: transform 0.2s ease-in-out;
-    }
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
 
-    .back-to-top a:hover {
-      transform: scale(1.1);
-    }
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+  }
 
-    .back-to-top a i {
-      color: #fff;
-      font-size: 24px;
-    }
+  to {
+      opacity: 1;
+      transform: none;
+  }
+}
 
-    footer {
-      background-color: #0056b3;
-      color: #fff;
-      padding: 20px 0;
-    }
+.fadeInUp {
+  animation-name: fadeInUp;
+}
 
-    footer a {
-      color: #fff;
-      text-decoration: none;
-    }
+.navbar {
+  background-color: #0056b3;
+  border-bottom: 1px solid #e7e7e7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-    footer a:hover {
-      text-decoration: underline;
-    }
+.navbar-nav .nav-link {
+  color: #fff !important;
+}
 
-    .navbar-brand img {
-      height: 300px;
-      width: auto;
-      /* Maintain aspect ratio */
-    }
+.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
 
-    .navbar {
-      margin-bottom: 50px;
-    }
+/* .back-to-top {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  display: none;
+  z-index: 9999;
+}
 
-    .navbar-brand img {
-      height: 100px;
-      /* Adjust the height to fit your logo */
-      margin-right: 10px;
-    }
+.back-to-top a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #0056b3;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+.back-to-top a:hover {
+  transform: scale(1.1);
+}
+
+.back-to-top a i {
+  color: #fff;
+  font-size: 24px;
+} */
+
+ /* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  z-index: 99;
+}
+
+.back-to-top a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.back-to-top a:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.back-to-top a i {
+  font-size: 20px;
+}
+
+
+footer {
+  background-color: #0056b3;
+  color: #fff;
+  padding: 20px 0;
+  margin-bottom: -510;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.navbar-brand img {
+  height: auto;
+  max-height: 50px; /* Adjust this value to fit your design */
+  width: auto;
+  margin-right: 10px;
+}
+
+.navbar {
+  margin-bottom: 50px;
+}
+
+ /* Define the .text-blue class to set the text color to blue */
+ .text-blue {
+  color: #007bff; /* Bootstrap blue or any shade you prefer */
+}
+
+.text-blue:hover {
+  color: #0056b3; /* Darker blue for hover effect */
+  text-decoration: underline; /* Optional: underline on hover */
+}
+
+ 
+/* Ensure the carousel container and cards are responsive */
+#carouselTeam {
+  max-width: 100%; /* Full width of the container */
+  margin: 0 auto; /* Center the carousel within the container */
+}
+
+
+
+.card {
+  max-width: 400px; /* Adjust the max-width as needed */
+  margin: 0 auto; /* Center the card */
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.card-img-top {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Additional media queries for fine-tuning */
+@media (min-width: 768px) {
+  .card {
+    max-width: 300px; /* Adjust the max-width for medium screens */
+  }
+}
+
+@media (min-width: 992px) {
+  .card {
+    max-width: 400px; /* Adjust the max-width for large screens */
+  }
+}
   </style>
 </head>
 
@@ -195,39 +293,39 @@
 
   <!-- Header with navbar -->
   <header>
-     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <a class="navbar-brand" href="#">
-        <img src="BJI_Logo.png" alt="BJI LOGO">
-    </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#hero">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#booking">Book Now</a>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link" href="#reviews">Reviews</a>
-          </li> 
-          <li class="nav-item">
-            <a class="nav-link" href="#team">Meet Our Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="About.html">About Us</a>
-          </li>
-        </ul>
-      </div>
-    </nav> 
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="images/BJI_Logo.png" alt="BJI LOGO">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#hero">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#booking">Book Now</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#reviews">Reviews</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#team">Meet Our Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.php">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- New Nav -->
     <!-- <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
@@ -272,17 +370,14 @@
 <br>
 <b>Executive Summary</b>
 <br>
-<b>BJI KLINS</b>, a soon-to-launch professional cleaning service company, is dedicated to providing exceptional cleaning experiences for residential and commercial clients in Warri City, State. We'll offer a variety of customizable cleaning services, including fumigation, to meet the specific needs of our clients, ensuring a clean, healthy, and organized environment. Our focus on reliability, eco-friendly products, and exceptional customer service will position Scrub Klin as the premier cleaning service in the area.
-
-
+<b>BJI KLINS</b>, a  professional cleaning service company, is dedicated to providing exceptional cleaning experiences for residential and commercial clients in Warri City and anywhere within Nigeria. We offer a variety of customizable cleaning services, including fumigation, to meet the specific needs of our clients, ensuring a clean, healthy, and organized environment. Our focus on reliability, eco-friendly products, and exceptional customer service  positions BJI KLINS as a premier cleaning service.
 
 </p>
         </div>
         <div class="col-md-6">
           <p class="animated fadeInUp"><b>Company Overview</b>
 <br>
-BJI KLINS is a local cleaning service company in its pre-launch phase, established in 2024. We are committed to providing high-quality cleaning solutions with a personalized touch. Our team is currently under development and will be comprised of experienced, reliable, and insured cleaners, along with licensed and certified fumigation technicians.</p>
-        </div>
+<b>BJI KLINS</b> is a local cleaning service company,  established since 2019. We are committed to providing high-quality cleaning solutions with a personalized touch. Our team is comprised of experienced, reliable, and insured cleaners, along with licensed and certified fumigation technicians.    </div>
       </div>
     </div>
   </section>
@@ -290,24 +385,24 @@ BJI KLINS is a local cleaning service company in its pre-launch phase, establish
 
   <!-- Footer -->
   <footer class="py-4 bg-dark text-white">
-    <div class="container text-center">
-        <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
-        <a href="https://wa.me/2349072343041" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://github.com/yourusername" class="text-white mx-2"><i class="fab fa-github"></i></a>
-        <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
-    </div>
-    <div class="container text-center mt-3">
-        <p>BJI KLINS</p>
-        <p>Opp. Kingsway International School,
-          along FUPRE road, Ugbomro
-        </p>
-        <p>Delta State, Nigeria</p>
-        <p>Phone: <a href="tel:+2349072343041" class="text-white">+234 706 799 8386</a></p>
-        <p>Email: <a href="mailto:info@bjiklins.com" class="text-white">info@bjiklins.com</a></p>
-    </div>
-    <p class="mt-3 fadeInUp text-center">&copy; 2024 BJI KLINS</p>
-</footer>
+        <div class="container text-center">
+        <a href="#" class="text-bold mx-2" style="color: #1DA1F2;"><i class="fab fa-twitter"></i></a>
+<a href="#" class="text-bold mx-2" style="color: #1877F2;"><i class="fab fa-facebook"></i></a>
+<a href="https://wa.me/2349072343041" class="text-bold mx-2" style="color: #25D366;"><i class="fab fa-whatsapp"></i></a>
+<a href="#" class="text-bold mx-2" style="color: #E1306C;"><i class="fab fa-instagram"></i></a>
+
+        </div>
+        <div class="container text-center mt-3">
+        
+            <p>Opp. Kingsway International School, along FUPRE road, Ugbomro</p>
+            <p>Delta State, Nigeria</p>
+            <p>Phone: <a href="tel:+2349072343041" class="text-blue" style="font-weight: bold;">0&nbsp;9&nbsp;0&nbsp;7&nbsp;2&nbsp;3&nbsp;4&nbsp;3&nbsp;0&nbsp;4&nbsp;1</a></p>
+
+            <p>Email: <a href="mailto:info@bjiklins.com" class="text-blue">info@bjiklins.com</a></p>
+        </div>
+        <p class="mt-3 fadeInUp text-center">&copy; 2024 BJI KLINS</p>
+    </footer>
+
 
   <!-- Bootstrap JS and dependencies -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
